@@ -1,4 +1,4 @@
-# star-wars-app
+# Star Wars App
 Aplicação em Vue JS que traz uma lista dos personagens da saga Star Wars.
 
 # Instruções
