@@ -103,6 +103,20 @@ html {
   .nave_1 {
     display: none;
   }
+  .back-to-top  {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  .millennium__falcon {
+    display: none;
+  }
+  .nave_1 {
+    display: none;
+  }
+  .back-to-top  {
+    display: none;
+  }
 }
 
 @media (min-width: 425px) {

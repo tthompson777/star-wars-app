@@ -96,7 +96,7 @@ button {
   transform: translate(-50%, 0);
 }
 
-.button__loadmore-container .baby__yoda{
+.button__loadmore-container .baby__yoda {
   position: fixed;
   width: 40px;
   bottom: 12px;
@@ -156,9 +156,36 @@ button.button__loadmore:active::before {
   .persons .persons-grid {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .persons .persons-header {
     width: 320px;
+  }
+
+  .button__loadmore-container .baby__yoda {
+    display: none;
+  }
+
+  button {
+    width: 200px;
+  }
 }
+
+@media (max-width: 375px) {
+  .persons .persons-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .persons .persons-header {
+    width: 375px;
+  }
+
+  .button__loadmore-container .baby__yoda {
+    display: none;
+  }
+
+  button {
+    width: 200px;
+  }
 }
 
 @media (min-width: 425px) {
