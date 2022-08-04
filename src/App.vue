@@ -96,42 +96,27 @@ html {
   cursor: pointer;
 }
 
-@media (max-width: 320px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
   .millennium__falcon {
     display: none;
   }
   .nave_1 {
     display: none;
   }
-  .back-to-top  {
-    display: none;
-  }
-}
-@media (max-width: 375px) {
-  .millennium__falcon {
-    display: none;
-  }
-  .nave_1 {
-    display: none;
-  }
-  .back-to-top  {
+  .back-to-top {
     display: none;
   }
 }
 
-@media (min-width: 425px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
   .back-to-top {
     right: 1rem;
   }
 }
 
-@media (min-width: 600px) {
-  .back-to-top {
-    right: 1rem;
-  }
-}
-
-@media (min-width: 900px) {
+@media only screen and (min-width: 900px) {
   .back-to-top {
     right: 1rem;
   }

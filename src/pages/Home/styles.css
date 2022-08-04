@@ -188,19 +188,21 @@ button.button__loadmore:active::before {
   }
 }
 
-@media (min-width: 425px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
   .persons .persons-grid {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
-@media (min-width: 600px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
   .persons .persons-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (min-width: 900px) {
+@media only screen and (min-width: 900px) {
   .persons .persons-grid {
     grid-template-columns: repeat(3, 1fr);
   }
