@@ -10,3 +10,6 @@ Aplicação em Vue JS que traz uma lista dos personagens da saga Star Wars.
  - Para estilo foi usado o bootstrap-vue;
  - Na api foi usado o axios;
  - URL base da API com os personagens de Star Wars: https://akabab.github.io/starwars-api/api/;
+ 
+ # Online
+ Ver Online: https://star-wars-eju4o64p4-tthompson777.vercel.app/
