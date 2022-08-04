@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.persons {
+  padding: 1.5rem 0;
+}
+
+.persons .persons-logo {
+  width: 100px;
+}
+
+.persons .persons-header {
+  background-color: #1e1815;
+}
+
+.persons .persons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(350px, 1fr));
+  grid-gap: 20px;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.persons .persons-grid>article {
+  height: 350px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 0.3rem;
+}
+
+.persons .persons-grid>article.img-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: transform .5s;
+}
+
+.persons .persons-grid>article.img-background:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.persons .persons-grid>article .text {
+  background-color: rgba(27, 27, 27, 0.66);
+  padding: 0 20px 20px;
+  border-radius: 0.3rem;
+  height: 350px;
+  width: 100%;
+  color: #fff;
+  opacity: 0;
+}
+
+.persons .persons-grid>article.img-background:hover .text {
+  opacity: 1;
+}
+
+.persons .persons-grid>article.img-background .text .text-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  width: 100%;
+}
+
+.persons .persons-grid>article.img-background .text .text-inner h3 {
+  font-family: 'Anton', sans-serif;
+}
+
+.persons .persons-grid>article.img-background .text .text-inner span {
+  text-transform: capitalize;
+}
+
+/* Botão carregar mais */
+button {
+  width: 250px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: inherit;
+  font-family: 'Poppins', sans-serif;
+}
+
+.button__loadmore-container {
+  position: fixed;
+  z-index: 9999;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.button__loadmore-container .baby__yoda{
+  position: fixed;
+  width: 40px;
+  bottom: 12px;
+  right: 195px;
+  transform: scaleX(-1);
+}
+
+button.button__loadmore {
+  font-weight: 600;
+  color: #382b22;
+  text-transform: uppercase;
+  padding: 1.25em 2em;
+  background: #fff;
+  border: 2px solid #282828;
+  border-radius: 0.75em;
+  transform-style: preserve-3d;
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+button.button__loadmore::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #4e4e4e;
+  border-radius: inherit;
+  box-shadow: 0 0 0 2px #282828, 0 0.625em 0 0 transparent;
+  transform: translate3d(0, 0.75em, -1em);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+button.button__loadmore:hover {
+  background: #fff;
+  transform: translate(0, 0.25em);
+}
+
+button.button__loadmore:hover::before {
+  box-shadow: 0 0 0 2px #282828, 0 0.5em 0 0 transparent;
+  transform: translate3d(0, 0.5em, -1em);
+}
+
+button.button__loadmore:active {
+  background: #fff;
+  transform: translate(0em, 0.75em);
+}
+
+button.button__loadmore:active::before {
+  box-shadow: 0 0 0 2px #282828, 0 0 transparent;
+  transform: translate3d(0, 0, -1em);
+}
+
+@media (min-width: 425px) {
+  .persons .persons-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 600px) {
+  .persons .persons-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .persons .persons-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
