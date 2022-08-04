@@ -152,6 +152,15 @@ button.button__loadmore:active::before {
   transform: translate3d(0, 0, -1em);
 }
 
+@media (max-width: 320px) {
+  .persons .persons-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .persons .persons-header {
+    width: 320px;
+}
+}
+
 @media (min-width: 425px) {
   .persons .persons-grid {
     grid-template-columns: repeat(1, 1fr);
