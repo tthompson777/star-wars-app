@@ -95,6 +95,16 @@ html {
   border-radius: 0.3rem;
   cursor: pointer;
 }
+
+@media (max-width: 320px) {
+  .millennium__falcon {
+    display: none;
+  }
+  .nave_1 {
+    display: none;
+  }
+}
+
 @media (min-width: 425px) {
   .back-to-top {
     right: 1rem;
